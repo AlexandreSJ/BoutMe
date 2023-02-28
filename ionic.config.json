@@ -1,0 +1,7 @@
+{
+  "name": "BoutMe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

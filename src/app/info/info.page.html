@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Info
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Info</ion-title>
+    </ion-toolbar>
+  </ion-header>
+    <div class="centralize">
+      <ion-avatar class="avatar centralize">
+        <img alt="" src="../../assets/Me.jpg" />
+      </ion-avatar>
+      <h4>
+        <p>Alexandre da Silva Junior</p>
+        <ion-note>Full-Stack Programmer, {{age}} years old<br>
+        Employed by OIC</ion-note>
+    </h4>
+    </div>
+
+  <ion-grid>
+  
+    <ion-row>
+      <ion-col size="12">
+        <ion-item link href="../../assets/Me.pdf" target="blank" detail="false">
+          <ion-icon name="clipboard" slot="end"></ion-icon>
+          <ion-label>
+            <ion-label>My resume</ion-label>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item link href="https://github.com/AlexandreSJ" target="blank" detail="false">
+          <ion-icon name="logo-github" slot="end"></ion-icon>
+          <ion-label>
+            <ion-label>Github</ion-label>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row>
+      <ion-col size="12">
+        <ion-item link href="https://www.instagram.com/msc_aelx" target="blank" detail="false">
+          <ion-icon name="logo-instagram" slot="end"></ion-icon>
+          <ion-label>
+            <ion-label>Instagram</ion-label>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="12">
+        <ion-item link href="https://www.linkedin.com/in/alexandre-da-silva-junior-b51000196/" target="blank" detail="false">
+          <ion-icon name="logo-linkedin" slot="end"></ion-icon>
+          <ion-label>
+            <ion-label>Linkedin</ion-label>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  
+  </ion-grid>
+</ion-content>

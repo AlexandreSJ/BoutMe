@@ -1,0 +1,109 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Journey
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Journey</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid fixed>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item button detail="true" id="open-modal-zampieri">
+          <ion-icon name="school"></ion-icon>
+            <ion-label>
+              <ion-label>Finished scholl on
+                <b style="color:rgb(250, 198, 54)">Zampieri</b>
+              </ion-label>
+              <ion-note>Colégio Zampieri, end on 2020</ion-note>
+            </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <ion-item button detail="true" id="open-modal-ceap">
+          <ion-icon name="logo-html5"></ion-icon>
+            <ion-label>
+              <ion-label>Started programming on 
+                <b style="color:rgb(83, 170, 83)">CEAP</b>
+              </ion-label>
+              <ion-note>3 years of study</ion-note>
+            </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="12">
+        <ion-item button detail="true" id="open-modal-rv">
+          <ion-icon name="logo-ionic"></ion-icon>
+          <ion-label>
+            <ion-label>First Job on 
+              <b style="color:rgb(199, 62, 62)">Red Ventures</b>
+            </ion-label>
+            <ion-note>6 months as front-end intern</ion-note>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="12">
+        <ion-item button detail="true" id="open-modal-oic">
+          <ion-icon name="logo-nodejs"></ion-icon>
+          <ion-label>
+            <ion-label>Recent Job on 
+              <b style="color: rgb(108, 167, 187)">OIC</b>
+            </ion-label>
+            <ion-note>9 months as full-stack intern (and counting)</ion-note>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
+
+<ion-modal trigger="open-modal-ceap" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-button (click)="cancel()" color="danger"><ion-icon name="close-circle"></ion-icon></ion-button>
+        </ion-buttons>
+        <ion-title>Start</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+
+      <ion-item button href="https://ceappedreira.org.br/" target="blank" detail="false">
+        <ion-avatar slot="start">
+          <img alt="CEAP" src="../../assets/ceap.jpg" />
+        </ion-avatar>
+        <ion-label>Centro Educacional Assistencial Profissionalizante
+        </ion-label>
+        <ion-icon name="link" slot="end"></ion-icon>
+      </ion-item>
+
+      <ion-img src="../../assets/ceap-melhores-ongs.png" ></ion-img>
+      <ion-item>
+        <ion-text>
+          <p>É uma instituição privada que por três anos seguidos recebeu nomeações por estar entre as melhores ONGs de educação do Brasil. </p>
+          <p>Seu ensino é especializado em desenvolver os aspectos técnicos (em até três áreas de mercado) e humanos de seus estudantes, contando com ótimos professores que agem como preceptores e mentores. Em muitos casos, o CEAP também ajuda a família a se aproximar também. </p>
+          <p>A instituição conta com quatro aulas diárias de 50 minutos para menores de 18 anos que aprendem conteúdo de universidade e podem ingressar imediatamente com alguma de suas empresas parceiras no mercado de trabalho. </p>
+          <p>Para saber mais, clique <a href="https://ceappedreira.org.br" target="blank">aqui</a> ou no cabeçalho deste ítem para visitar o site. </p>
+        </ion-text>
+      </ion-item>
+    </ion-content>
+  </ng-template>
+</ion-modal>
