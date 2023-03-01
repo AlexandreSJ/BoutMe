@@ -1,0 +1,96 @@
+
+ion-title{
+    text-align: center;
+}
+ion-item ion-icon{
+    padding-right: 10px;
+}
+ion-avatar{
+    animation-name: avatar;
+    animation-duration: 2s;
+    :hover{
+        opacity: 95%; 
+        cursor: pointer;
+    }
+    @keyframes avatar {
+        0% {
+            box-shadow: gray 0 0 20px;
+        }
+        100% {
+            box-shadow: gray 0 0 0;
+        }
+    }
+}
+ion-grid{
+    max-width: 600px;
+    opacity: 100%;
+    animation-name: items;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    @keyframes items {
+        0% {
+            opacity: 0;
+            transform: translateX(10%);
+        }
+        100% {
+            opacity: 100%;
+            transform: translateX(0);
+        }
+    }
+}
+.avatar{
+    margin: 4%;
+    background-color: transparent;
+    width: auto;
+    width: 250px;
+    height: 250px;
+}
+.centralize{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    h4{
+        margin: 0 0 4% 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-name: centralize-from-right;
+    }
+    p{
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-name: centralize-from-right;
+        
+    }
+    .detail-note{
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-name: centralize-from-left;
+    }
+    @keyframes centralize-from-right {
+        0% {
+            transform: translateX(10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+    @keyframes centralize-from-left {
+        0% {
+            transform: translateX(-10%);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(-10%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+}
