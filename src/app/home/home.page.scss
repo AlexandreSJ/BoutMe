@@ -69,6 +69,11 @@ ion-grid{
         animation-timing-function: ease-in-out;
         animation-name: centralize-from-left;
     }
+    .deploy-note{
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-name: centralize-fade;
+    }
     @keyframes centralize-from-right {
         0% {
             transform: translateX(10%);
@@ -90,6 +95,17 @@ ion-grid{
         }
         100% {
             transform: translateX(0);
+            opacity: 100%;
+        }
+    }
+    @keyframes centralize-fade {
+        0% {
+            opacity: 0;
+        }
+        70% {
+            opacity: 0;
+        }
+        100% {
             opacity: 100%;
         }
     }
