@@ -14,8 +14,8 @@ export class AppComponent {
       localStorage.setItem('theme','dark')
       this.renderer.setAttribute(document.body, 'color-theme', 'dark')
     }
-    if(localStorage.getItem('theme')=='dark'){  
-      this.renderer.setAttribute(document.getElementById('checkTheme'), 'checked', 'true')
-    }
+  }
+  ngOnInit(){
+    this.checkTheme()
   }
 }
