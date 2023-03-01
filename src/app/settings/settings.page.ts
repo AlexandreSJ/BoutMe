@@ -7,13 +7,15 @@ import { Component, Renderer2 } from '@angular/core';
 })
 export class SettingsPage {
 
-  constructor(private renderer: Renderer2) {}
+  constructor(
+    private renderer: Renderer2,
+    ) {}
   checkTheme(){
     if( localStorage.getItem('theme')=='light' ){ this.renderer.setAttribute(document.getElementById('checkTheme'), 'checked', 'false') }
     else{ this.renderer.setAttribute(document.getElementById('checkTheme'), 'checked', 'true') }
   }
   clearLS(){
-    localStorage.clear()
+    localStorage.setItem('theme', 'dark');
     this.checkTheme();
   }
   changeTheme(e){

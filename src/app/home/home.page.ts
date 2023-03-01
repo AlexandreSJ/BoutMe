@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { waitForAsync } from '@angular/core/testing';
-import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -9,31 +7,7 @@ import { ToastController } from '@ionic/angular';
 })
 export class HomePage implements OnInit {
   age: string;
-  constructor(
-    private toastController: ToastController,
-    ) { }
-
-  async presentToast() {
-    waitForAsync
-    const toast = await this.toastController.create({
-      message: 'Selecione as abas para explorar',
-      position: 'bottom',
-      cssClass: 'tabTutorialToast',
-      duration: 12000,
-      buttons: [
-        {
-          icon: 'close',
-          role: 'cancel',
-        }
-      ]
-    });
-    await toast.present();
-  }
-
-  async tabTutorialStart(){
-    await new Promise(f => setTimeout(f, 2500));
-    this.presentToast();
-  }
+  constructor() { }
   
   ngOnInit() {
     var today = new Date();
@@ -45,8 +19,5 @@ export class HomePage implements OnInit {
     }
     
     this.age = age.toString();
-
-    this.tabTutorialStart();
-    
   }
 }

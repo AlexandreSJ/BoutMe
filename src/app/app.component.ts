@@ -6,7 +6,9 @@ import { Component, Renderer2 } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private renderer: Renderer2) {}
+  constructor(
+    private renderer: Renderer2,
+    ) {}
   checkTheme(){
     if(localStorage.getItem('theme')!=null){
       this.renderer.setAttribute(document.body, 'color-theme', localStorage.getItem('theme'))

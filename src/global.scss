@@ -25,13 +25,16 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 ion-toast.tabTutorialToast {
-    --background: #eee;
+    --background: #ddd;
     --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
     --color: #4b4a50;
-    transform: translateY(-56px);
+    transform: translateY(-96px);
+    width: 80%;
+    left: 10%;
+    user-select: none; 
 }
 ion-toast.tabTutorialToast::part(button) {
-    color: #aa0000;
+    color: #a00;
 }
 ion-toast.tabTutorialToast::part(message) {
     text-align: center;
